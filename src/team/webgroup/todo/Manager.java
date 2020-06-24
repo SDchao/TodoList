@@ -22,17 +22,4 @@ public class Manager {
     public void removeEvent(int index) {
         eventArrayList.remove(index);
     }
-    public void setComplete(int index,Boolean isCompleted)
-    {
-        eventArrayList.set(index);
-        eventArrayList.set(isCompleted);
-    }
-
-    public void modifyEvent(int index,string newTitle,string newContent)
-    {
-        eventArrayList.modify(index);
-        eventArrayList.modify(newTitle);
-        eventArrayList.modify(newContent);
-    }
-
 }
