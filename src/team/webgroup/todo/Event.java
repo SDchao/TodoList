@@ -6,6 +6,15 @@ public class Event {
     private String content;
     private boolean isCompleted;
 
+    public Event() {
+    }
+
+    public Event(String p_title,String p_content,boolean p_isCompleted) {
+        setTitle(p_title);
+        setContent(p_content);
+        setCompleted(p_isCompleted);
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -30,6 +39,4 @@ public class Event {
         return isCompleted;
     }
 
-    public Event() {
-    }
 }
