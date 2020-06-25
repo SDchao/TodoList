@@ -33,13 +33,11 @@ public void testManager() {
     Assert.assertEquals("New 1st event title", manager.getEvents().get(1).getTitle());
     Assert.assertEquals("New 1st event content", manager.getEvents().get(1).getContent());
 
-    //TODO: setComplete
-    manager.setComplete(2,true);
-    Assert.assertEquals(true,manager.getEvents().get(2).isCompleted());
+    manager.setComplete(1,true);
+    Assert.assertEquals(true,manager.getEvents().get(1).isCompleted());
 
-    //TODO: removeEvent
-    manager.removeEvent(1);
-    Assert.assertNull(event1);
+    manager.removeEvent(0);
+    Assert.assertEquals(manager.getEvents().get(0), event2);
 
 }
 
