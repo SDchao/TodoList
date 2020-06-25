@@ -6,6 +6,10 @@ import java.util.Arrays;
 public class Manager {
     private ArrayList<Event> eventArrayList;
 
+    public Manager() {
+        this.eventArrayList = new ArrayList<>();
+    }
+
     public Manager(Event[] eventsToAdd) {
         this.eventArrayList = new ArrayList<>();
         eventArrayList.addAll(Arrays.asList(eventsToAdd));
