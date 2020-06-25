@@ -26,7 +26,12 @@ public class Manager {
     public void removeEvent(int index) {
         eventArrayList.remove(index);
     }
-
+    
+    public void setComplete(int index,Boolean isCompleted)
+    {
+        Event eventToset=eventArrayList.get(index);
+        eventToset.setCompleted(isCompleted);
+    }
     public void modifyEvent(int index, String newTitle, String newContent) {
         Event eventToModify = eventArrayList.get(index);    // Get the target event from the list
         eventToModify.setTitle(newTitle);   // call target event's setTitle function to change the title
