@@ -28,7 +28,14 @@ public void testManager() {
     Assert.assertEquals(events.get(0), event1);
     Assert.assertEquals(events.get(1), event2);
 
-    //TODO: modify event
+    //modify event
+    manager.modifyEvent(1, "New 1st event title", "New 1st event content");
+    Assert.assertEquals("New 1st event title", manager.getEvents().get(1).getTitle());
+    Assert.assertEquals("New 1st event content", manager.getEvents().get(1).getContent());
+
+    //TODO: setComplete
+
+    //TODO: removeEvent
 }
 
 } 
